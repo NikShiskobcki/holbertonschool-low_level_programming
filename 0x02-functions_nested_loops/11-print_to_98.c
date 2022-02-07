@@ -13,6 +13,7 @@ int i;
 if (n==98)
 {
 printf("%d", n);
+ _putchar('\n');
 }
 else
 if (n<98)
@@ -25,6 +26,7 @@ printf("%d", i);
 printf("%c", ',');
 printf("%c", ' ');
 	 }
+ _putchar('\n');
  }
      }
    else
@@ -37,6 +39,7 @@ printf("%c", ' ');
 	   printf("%c", ',');
 	   printf("%c",' ');
 	 }
+	   _putchar('\n');
 	 }
      }
 
