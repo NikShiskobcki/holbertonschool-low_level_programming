@@ -21,15 +21,15 @@ void print_times_table(int n)
 	      if (c < 10)
 		{
 		  if (b != 0)
-		    printf("%s","   ");
+		    printf("%s","  ");
 		  printf("%d", c);
 		}
 	      else
 		{
 		  if (c >= 100)
-		    printf("%s %d","", c);
+		    printf("%d", c);
 		  else
-		    printf("%s %d"," ", c);
+		    printf("%s %d","", c);
 		}
 	      if (b != n)
 		printf("%s", ", " );
