@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-int sum, mul3, mul5;
+  int sum, mul3, mul5, i;
 sum = 0;
 mul3 = 3;
 mul5 = 5;
@@ -25,6 +25,14 @@ sum = sum + mul5;
 mul5 = mul5 + 5;
 }
 
+ for (i=10;i<=1024;i++)
+   {
+     if ((i % 3 == 0) && (i % 5 == 0))
+       {
+	 sum = sum - i;
+       }
+     
+   }
 printf("%d", sum);
 return (0);
 }
