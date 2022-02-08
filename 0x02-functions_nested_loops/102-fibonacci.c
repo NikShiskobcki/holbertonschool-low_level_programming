@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-  unInt prev, fibo, i;
+  unsigned int prev, fibo, i;
   fibo=0;
   prev=1;
   i=1;
