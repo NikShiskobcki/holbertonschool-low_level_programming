@@ -8,17 +8,21 @@
  */
 int main(void)
 {
-  unsigned int prev, fibo, i;
+  char str[11];
+  int prev, fibo, i;
   fibo=0;
   prev=1;
   i=1;
+  
   
   while (i<=50)
     {
       fibo=fibo+prev;
       prev=fibo;
-      printf("%u",fibo);
+      sprintf(str, "%d", fibo);
+      printf("%s",str);
       i=i+1;
+      
     
 	if (i!=50)
 	  {
