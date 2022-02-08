@@ -9,8 +9,8 @@
 int main(void)
 {
   long int prev, fibo, i;
-  fibo=0;
-  prev=1;
+  fibo=1;
+  prev=0;
   i=1;
   
   
