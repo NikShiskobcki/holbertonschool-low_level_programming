@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-  int prev, fibo, i;
+  unInt prev, fibo, i;
   fibo=0;
   prev=1;
   i=1;
@@ -17,7 +17,7 @@ int main(void)
     {
       fibo=fibo+prev;
       prev=fibo;
-      printf("%d",fibo);
+      printf("%u",fibo);
       i=i+1;
     
 	if (i!=50)
