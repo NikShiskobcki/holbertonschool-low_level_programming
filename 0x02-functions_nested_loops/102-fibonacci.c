@@ -8,8 +8,7 @@
  */
 int main(void)
 {
-  char str[11];
-  int prev, fibo, i;
+  long int prev, fibo, i;
   fibo=0;
   prev=1;
   i=1;
@@ -19,8 +18,7 @@ int main(void)
     {
       fibo=fibo+prev;
       prev=fibo;
-      sprintf(str, "%d", fibo);
-      printf("%s",str);
+      printf("%ld",fibo);
       i=i+1;
       
     
