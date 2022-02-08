@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>  
+#include <stdio.h>
 
 /**
  * print_times_table - Entry point
@@ -9,7 +9,7 @@
 void print_times_table(int n)
 {
 if (n == 0)
-printf("%d\n",n);
+printf("%d\n", n);
 if (n > 0 && n <= 15)
 {
 int a, b, c;
@@ -21,7 +21,7 @@ c = a * b;
 if (c < 10)
 {
 if (b != 0)
-printf("%s","  ");
+printf("%s", "  ");
 printf("%d", c);
 }
 else
@@ -29,10 +29,10 @@ else
 if (c >= 100)
 printf("%d", c);
 else
-printf("%s %d","", c);
+printf("%s %d", "", c);
 }
 if (b != n)
-printf("%s", ", " );
+printf("%s", ", ");
 }
 printf("\n");
 }
