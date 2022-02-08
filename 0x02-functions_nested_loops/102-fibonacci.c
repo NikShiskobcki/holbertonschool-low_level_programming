@@ -10,7 +10,7 @@ int main(void)
 {
   long int prev1, prev2, fibo, i;
   fibo=1;
-  prev1=0;
+  prev1=1;
   prev2=0;
   i=1;
   
