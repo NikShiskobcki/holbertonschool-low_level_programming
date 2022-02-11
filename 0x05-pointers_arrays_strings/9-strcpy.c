@@ -16,6 +16,6 @@ for (n = 0; n <= i; n++, j++)
 {
 dest[j] = src[n];
 }
-return (dest);
 }
+return(dest); 
 }
