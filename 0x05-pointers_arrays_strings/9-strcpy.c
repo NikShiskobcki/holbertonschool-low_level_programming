@@ -2,20 +2,22 @@
 #include "2-strlen.c"
 
 /**
- * rev_string - prints string and reverses it
- * @s: input
- *
+ * _strcpy - prints string and reverses it
+ * @dest: input
+ * @src: input
  */
 char *_strcpy(char *dest, char *src)
 {
-int i, n, j;
-i = (_strlen(src));
+int i, n;
+char str;
+i = (_strlen(src) - 1);
 if (i > 0)
 {
-for (n = 0; n <= i; n++, j++)
+for (n = 0; n <= i; n++)
 {
-dest[j] = src[n];
+str = src[n];
+dest[n] = str;
 }
 }
-return(dest); 
+return (dest); 
 }
