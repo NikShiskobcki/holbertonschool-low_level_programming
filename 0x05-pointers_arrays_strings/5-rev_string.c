@@ -1,5 +1,5 @@
 #include "main.h"
-#inlcude "2-strlen.c"
+#include "2-strlen.c"
 
 /**
  * rev_string - prints string and reverses it
