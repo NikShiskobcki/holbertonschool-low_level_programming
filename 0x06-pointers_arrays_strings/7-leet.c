@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * string_toupper - comp two strings
- * @ : chars
+ * leet - encodes
+ * @a: input
  *
  *
  * Return: string
