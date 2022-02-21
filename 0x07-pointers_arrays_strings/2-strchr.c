@@ -27,7 +27,7 @@ char *_strchr(char *s, char c)
 	break;
     }
   if (x == 0)
-    return (0);
+    return ('\0');
   else 
     {
       return(t);
