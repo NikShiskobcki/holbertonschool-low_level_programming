@@ -34,7 +34,7 @@ int is_palindrome(char *s)
   if (size % 2 == 0)
   return (aux(size - 1, 0, s));
   else
-    return (aux(size - 2, 0, s));
+    return (aux(size, 0, s));
 
 
 }
