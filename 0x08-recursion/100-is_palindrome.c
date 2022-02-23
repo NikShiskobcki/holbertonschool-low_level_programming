@@ -9,9 +9,9 @@
  * Return: int
  */
 
-int aux(int size, int i, char *s)
+int aux(int size, int i, char *s, int sizecpy)
 {
-  if ( i > size / 2)
+  if ( i > sizecpy / 2)
     return (1);
   if (s[i] == s[size])
     {
@@ -29,12 +29,11 @@ int aux(int size, int i, char *s)
 int is_palindrome(char *s)
 {
   int size = _strlen_recursion(s);
+  int sizecpy;
   if (size == 0 || size == 1)
     return (1);
-  if (size % 2 == 0)
-  return (aux(size - 1, 0, s));
-  else
-    return (aux(size - 1, 0, s));
+  sizecpy = size;
+  return (aux(size - 1, 0, s, sizecpy));
 
 
 }
