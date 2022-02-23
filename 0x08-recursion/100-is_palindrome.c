@@ -15,7 +15,7 @@ int aux(int size, int i, char *s, int sizecpy)
     return (1);
   if (s[i] == s[size])
     {
-      return (aux(size -1, i + 1, s));
+      return (aux(size -1, i + 1, s, sizecpy));
     }
   return (0);
 }
