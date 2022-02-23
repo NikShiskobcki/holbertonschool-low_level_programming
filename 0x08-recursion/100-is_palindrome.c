@@ -32,8 +32,9 @@ int is_palindrome(char *s)
   if (size == 0 || size == 1)
     return (1);
   if (size % 2 == 0)
-    size --;
-  return (aux(size - 1, 0, s));
+  return (aux(size, 0, s));
+  else
+    return (aux(size - 1, 0, s));
 
 
 }
