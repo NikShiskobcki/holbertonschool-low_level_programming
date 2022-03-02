@@ -18,7 +18,7 @@ for (i = 0; str[i] != '\0'; i++)
 }
 
 len = i + 1;
-newstr = malloc(len * sizeof(char));
+newstr = malloc(len *sizeof(char));
 
 if (newstr ==  NULL)
 return (NULL);
