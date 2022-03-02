@@ -13,9 +13,9 @@ unsigned int i;
 if (size == 0)
 return (NULL);
 
-ar = malloc(size);
+ ar = malloc(size * sizeof(char));
  if (ar == NULL)
-   return (null);
+   return (NULL);
  
 for (i = 0; i < size; i++)
 ar[i] = c;
