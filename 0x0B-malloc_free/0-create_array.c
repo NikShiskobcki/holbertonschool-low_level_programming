@@ -14,9 +14,11 @@ if (size == 0)
 return (NULL);
 
 ar = malloc(size);
-
+ if (ar == NULL)
+   return (null);
+ 
 for (i = 0; i < size; i++)
 ar[i] = c;
 
-return (0);
+return (ar);
 }
