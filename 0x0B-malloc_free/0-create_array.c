@@ -18,5 +18,5 @@ ar = malloc(size);
 for (i = 0; i < size; i++)
 ar[i] = c;
 
-return (ar);
+return (0);
 }
