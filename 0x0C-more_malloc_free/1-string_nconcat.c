@@ -32,7 +32,7 @@ unsigned int size1 = 0, size2 = 0, i, j;
 	}
     }
   
-      if (n > size2)
+      if (n >= size2)
 	n = size2;
 
       res = malloc((size1 + n + 1) * sizeof(char));
