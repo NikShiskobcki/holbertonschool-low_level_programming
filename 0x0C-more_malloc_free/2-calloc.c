@@ -4,23 +4,22 @@
  * _calloc - entry
  * @nmemb: input
  * @size: input
+ * Return: calloc
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-  char *mal;
-  unsigned int i;
-  
-  if (nmemb == 0 || size == 0)
-    return (NULL);
+char *mal;
+unsigned int i;
 
-  mal = malloc(nmemb * size);
-    if (mal == NULL)
-      return(NULL);
-    for (i = 0; i < (nmemb * size); i++)
-    mal[i] = 0;
+if (nmemb == 0 || size == 0)
+return (NULL);
 
-  return (mal);
+mal = malloc(nmemb * size);
+if (mal == NULL)
+return (NULL);
+for (i = 0; i < (nmemb * size); i++)
+mal[i] = 0;
 
+return (mal);
 
-  
 }
