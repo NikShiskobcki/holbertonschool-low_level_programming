@@ -38,16 +38,19 @@ unsigned int size1 = 0, size2 = 0, i, j;
       res = malloc((size1 + n + 1) * sizeof(char));
       if (res == NULL)
 	return (NULL);
-      
+      if (s1 != NULL)
+	{
   for (i = 0; i < size1; i++)
     {
       res[i] = s1[i];
     }
-  
+	}
+      if (s2 != NULL)
+	{
   for (j = 0; j <= n; i++, j++)
     {
       res[i] = s2[j];
     }
-  res[i] = '\0';
+	}
   return (res);
 }
