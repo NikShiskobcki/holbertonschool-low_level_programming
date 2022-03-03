@@ -48,6 +48,6 @@ unsigned int size1 = 0, size2 = 0, i, j;
     {
       res[i] = s2[j];
     }
-  res[i + 1] = '\0';
+  res[i] = '\0';
   return (res);
 }
