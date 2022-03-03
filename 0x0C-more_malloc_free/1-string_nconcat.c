@@ -9,49 +9,33 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int size1 = 0, size2 = 0, i, j;
-  char *res;
-  if (s1 == NULL && s2 == NULL)
-    {
-      res = malloc(1 * sizeof(char));
-      res[0] = '\0';
-      return (res);
-    }
+unsigned int i = 0, j, size1 = 0, size2 = 0;
+char *res;
 
-  if (s1 != NULL)
-    {
-      for (size1 = 0; s1[size1] != '\0'; size1++)
-	{
-	}
-    }
+if (s1 != NULL)
+size1 = strlen(s1);
+if (s2 != NULL)
+size2 = strlen(s2);
 
-  if (s2 != NULL)
-    {
-      for (size2 = 0; s2[size2] != '\0'; size2++)
-	{
-	}
-    }
-  
-      if (n >= size2)
-	n = size2;
+if (n < size2 + 1)
+res = malloc(sizeof(char) * (size1 + n + 1));
+else
+res = malloc(sizeof(char) * (size1 + size2 + 1));
+if (res == NULL)
+return (NULL);
 
-      res = malloc((size1 + n + 1) * sizeof(char));
-      if (res == NULL)
-	return (NULL);
-      if (s1 != NULL)
-	{
-  for (i = 0; i < size1; i++)
-    {
-      res[i] = s1[i];
-    }
-	}
-      if (s2 != NULL)
-	{
-  for (j = 0; j < n; i++, j++)
-    {
-      res[i] = s2[j];
-    }
-	}
-     
-      return (res);
+if (s1 != NULL)
+for (i = 0; s1[i] != '\0'; i++)
+res[i] = s1[i];
+if (s2 != NULL)
+{
+if (n < size2)
+for (j = 0; j < n; j++, i++)
+res[i] = s2[j];
+else
+for (j = 0; s2[j] != '\0'; j++, i++)
+res[i] = s2[j];
+}
+res[i] = '\0';
+return (res);
 }
