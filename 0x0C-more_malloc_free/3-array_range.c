@@ -9,8 +9,16 @@ int *array_range(int min, int max)
 {
   int i, x, largo;
   int *mal;
-  if (min >= max)
+  if (min > max)
     return(NULL);
+  if (min= max)
+    {
+      mal = malloc(1 * sizeof(int));
+      if (mal == NULL)
+	return (NULL);
+      mal[0] = min;
+      return (mal);
+    }
   largo = (max - min);
   mal = malloc((largo + 1) * sizeof(int));
   if (mal == NULL)
