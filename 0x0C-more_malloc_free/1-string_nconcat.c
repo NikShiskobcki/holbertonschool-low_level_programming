@@ -35,7 +35,7 @@ unsigned int size1 = 0, size2 = 0, i, j;
       if (n >= size2)
 	n = size2;
 
-      res = malloc((size1 + n) * sizeof(char));
+      res = malloc((size1 + n + 1) * sizeof(char));
       if (res == NULL)
 	return (NULL);
       if (s1 != NULL)
@@ -52,6 +52,6 @@ unsigned int size1 = 0, size2 = 0, i, j;
       res[i] = s2[j];
     }
 	}
-      res[i] = '\0';
+     
       return (res);
 }
