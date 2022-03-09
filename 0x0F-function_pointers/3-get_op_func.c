@@ -1,5 +1,7 @@
 #include "3-calc.h"
-
+#include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
 /**
  *
  *
@@ -18,12 +20,12 @@ op_t ops[] = {
 };
 int i;
 i = 0;
-if (s != '+' || s != '-' || s != '*' || s != '/' || s != '%' )
-return (NULL);
-
-while (s != ops[i].op)
-{      
-i++;
-}
-return (ops[i].f(int, int))
+ while (ops[i].op)
+   {
+     if (ops[i].op[0] == s[0] && s[1] == '\0')
+       return (ops[i].f);
+     i++;
+   }
+ printf("Error\n");
+ exit(99);
 }
