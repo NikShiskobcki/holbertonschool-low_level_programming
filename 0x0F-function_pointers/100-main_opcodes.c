@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
       exit(2);
     }
   system("gcc 100-main_opcodes.c -c");
-  
+  system("objdump -D 100-main_opcodes.o");
  
     
 	
