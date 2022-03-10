@@ -12,13 +12,13 @@ int main(int argc, char *argv[])
 {
   if (argc != 2)
     {
-      printf("Error\n");
+      printf("Error");
       exit(1);
     }
 
   if (atoi(argv[1]) < 0)
     {
-      printf("Error\n");
+      printf("Error");
       exit(2);
     }
   system("gcc 100-main_opcodes.c -c");
