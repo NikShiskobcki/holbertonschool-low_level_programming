@@ -12,17 +12,17 @@ int main(int argc, char *argv[])
 {
   if (argc != 2)
     {
-      printf("Error");
+      printf("Error\n");
       exit(1);
     }
 
   if (atoi(argv[1]) < 0)
     {
-      printf("Error");
+      printf("Error\n");
       exit(2);
     }
   system("gcc 100-main_opcodes.c -c");
-  system("objdump -D 100-main_opcodes.o");
+  
  
     
 	
