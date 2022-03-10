@@ -3,9 +3,9 @@
 
 /**
  * main - prints opcodes
- * @argc: num of arg
- * @argv: array of args
- * Return: 0 on Success
+ * @argc: input
+ * @argv: input
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
