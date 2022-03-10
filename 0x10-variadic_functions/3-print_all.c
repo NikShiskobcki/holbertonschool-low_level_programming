@@ -52,7 +52,7 @@ printf("%s", str);
 void print_all(const char * const format, ...)
 {
 format_t x[] = {
-{"c", print_c}
+{"c", print_c},
 {"i", print_i},
 {"f", print_f},
 {"s", print_s},
