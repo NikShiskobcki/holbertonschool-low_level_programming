@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-int b, i;
+  int i, j;
 char *array;
 
 if (argc != 2)
@@ -18,16 +18,16 @@ if (argc != 2)
 printf("Error\n");
 exit(1);
 }
-b = atoi(argv[1]);
-if (b < 0)
+j = atoi(argv[1]);
+if (j < 0)
 {
 printf("Error\n");
 exit(2);
 }
 array = (char *)main;
-for (i = 0; i < b; i++)
+for (i = 0; i < j; i++)
 {
-if (i == b - 1)
+if (i == j - 1)
 {
 printf("%02hhx\n", array[i]);
 break;
