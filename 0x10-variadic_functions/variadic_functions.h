@@ -6,15 +6,14 @@
 #include <unistd.h>
 
 /**
- * format - Struct format
- *
- * @form: The operator
- * @f: The function associated
+ * struct format - Struct format
+ * @form : The operator
+ * @f : The function associated
  */
 typedef struct format
 {
-  char *form;
-  void (*f)(va_list);
+char *form;
+void (*f)(va_list);
 } format_t;
 
 void print_c(va_list c);
