@@ -4,38 +4,37 @@
  * add_node_end - adds node to end
  * @head: input
  * @str: input
- * Return: address of new element
- */
+ * Return: list.
+ **/
+
 list_t *add_node_end(list_t **head, const char *str)
 {
-	char *aux;
-	list_t *new_node, *x;
-	unsigned int length = 0;
-	int i = 0;
+list_t *aux, *x = *head;
 
-	for (i = 0; str[i] != '\0'; i++)
+	aux = malloc(sizeof(list_t));
+
+	if (aux == NULL)
 	{
-	}
-	length = i;
-
-	new_node = malloc(sizeof(list_t));
-	if (new_node == NULL)
 		return (NULL);
-	aux = strdup(str);
+	}
+	if (str == NULL)
+	{
+		free(aux);
+		return (NULL);
+	}
 
-	new_node->str = aux;
-	new_node->len = length;
-	new_node->next = NULL;
+	aux->str = strdup(str);
+	aux->len = strlen(str);
+	aux->next = NULL;
 
-	if (*head == NULL)
-		*head = new_node;
+	if (x == NULL)
+		*head = aux;
 	else
 	{
-		x = *head;
 		while (x->next != NULL)
 			x = x->next;
-		x->next = new_node;
+		x->next = aux;
 	}
 
-return (*head);
+	return (aux);
 }
