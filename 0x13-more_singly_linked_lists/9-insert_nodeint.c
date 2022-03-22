@@ -30,7 +30,7 @@ unsigned int i = 0;
 	{
 		aux = aux->next;
 		i++;
-	}	
+	}
 
 	while (aux && (i == (idx - 1)))
 	{
