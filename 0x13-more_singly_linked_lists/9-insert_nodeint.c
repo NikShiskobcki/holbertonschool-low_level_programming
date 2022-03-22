@@ -26,7 +26,7 @@ unsigned int i = 0;
 		return (*head);
 	}
 
-	if (aux && (i == (idx - 1)))
+	while (aux && (i == (idx - 1)))
 	{
 		new_node->next = aux->next;
 		aux->next = new_node;
