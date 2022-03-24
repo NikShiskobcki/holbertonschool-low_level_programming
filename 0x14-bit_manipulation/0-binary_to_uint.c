@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- *
- *
+ * binary_to_uint - converts bin to uint
+ * @b: input
+ * Return: uint
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -18,9 +19,9 @@ int i = 0;
 		x <<= 1;
 		x += b[i] - '0';
 		i++;
-	
+
 	}
-	
+
 	return (x);
 
 }
