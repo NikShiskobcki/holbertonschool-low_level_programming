@@ -14,6 +14,6 @@ unsigned int i = 1;
 	if (index > (sizeof((*n)) * 8))
 		return (-1);
 	i = ~(i << index);
-	*n = i | *n;
+	*n = i & *n;
 	return (1);
 }
