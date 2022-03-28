@@ -24,8 +24,8 @@ int fd, len = 0, out;
 	}
 
 	while (text_content[len] != '\0')
-			len++;
-	out = write(fd, text_content,len);
+		len++;
+	out = write(fd, text_content, len);
 
 	if (len != out)
 	{
