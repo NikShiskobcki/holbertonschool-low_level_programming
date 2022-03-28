@@ -13,11 +13,11 @@ ssize_t len = 0, out;
 
 	if (filename == NULL)
 		return (-1);
-	
+
 	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
 	if (fd == -1)
 		return (-1);
-	
+
 	if (!text_content)
 		return (1);
 	while (text_content[len] != '\0')
