@@ -21,9 +21,13 @@ ssize_t fd, in, out;
 	
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
+	{
+		close(fd);
 		return (0);
+	}
 
 	in = read(fd, buffer, letters);
+	close(fd);
 	if (in == -1)
 		return (0);
 
