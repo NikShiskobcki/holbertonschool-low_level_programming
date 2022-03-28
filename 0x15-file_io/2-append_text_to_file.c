@@ -14,7 +14,7 @@ int fd, len = 0, out;
 		return (-1);
 
 	fd = open(filename, O_WRONLY | O_APPEND);
-	if (fd == NULL)
+	if (fd == -1)
 		return (-1);
 
 	if (!text_content)
@@ -23,7 +23,7 @@ int fd, len = 0, out;
 		return (1);
 	}
 
-	while (text_content[len] != '\0'
+	while (text_content[len] != '\0')
 			len++;
 	out = write(fd, text_content,len);
 
