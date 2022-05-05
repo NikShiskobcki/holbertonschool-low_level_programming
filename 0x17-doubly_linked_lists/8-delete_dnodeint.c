@@ -17,6 +17,8 @@ dlistint_t *r;
 		r = *head;
 		*head = r->next;
 		free(r);
+		if(*head != NULL)
+			head->prev =NULL;
 		return (1);
 	}
 	while (i != (index - 1) && node)
