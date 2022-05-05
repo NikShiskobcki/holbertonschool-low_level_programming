@@ -1,8 +1,9 @@
 #include "lists.h"
 
 /**
- *
- *
+ *sum_dlistint - sums all elements
+ * @head: input
+ * Return: list
  */
 int sum_dlistint(dlistint_t *head)
 {
