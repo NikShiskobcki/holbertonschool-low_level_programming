@@ -6,11 +6,12 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *nodo = h;
+	const dlistint_t *nodo = h;
 	size_t i = 0;
 
-	while (n != NULL)
-	{ printf("%i\n", nodo->n);
+	while (nodo != NULL)
+	{ 
+		printf("%i\n", nodo->n);
 		i++;
 		nodo = nodo->next;
 	}
