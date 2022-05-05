@@ -13,7 +13,7 @@ unsigned int auxIdx;
 dlistint_t *old = *head;
 dlistint_t *aux = *head;
 
-	if (!(head))
+	if ((!(*head)) || (index != 0 && !(*head)->next))
 		return (-1);
 
 	if (index == 0)
