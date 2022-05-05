@@ -16,10 +16,11 @@ dlistint_t *r;
 	{
 		r = *head;
 		*head = r->next;
-		free(r);
 		if(node != NULL)
 			node->prev =NULL;
+		free(r);
 		return (1);
+
 	}
 	while (i != (index - 1) && node)
 	{
