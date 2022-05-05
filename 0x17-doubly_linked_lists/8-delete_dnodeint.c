@@ -12,7 +12,7 @@ unsigned int i = 0;
 dlistint_t *old = *head;
 dlistint_t *aux = *head;
 
-	if (head == NULL)
+	if (!(head))
 		return (-1);
 
 	if (index == 0)
@@ -33,7 +33,7 @@ dlistint_t *aux = *head;
 	{
 		old = aux->next;
 		if (old->next)
-			old->next->next->prev = aux;
+			old->next->prev = aux;
 		aux->next = old->next;
 		free(old);
 		return (1);
