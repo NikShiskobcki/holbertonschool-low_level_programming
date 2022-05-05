@@ -7,10 +7,10 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	dlistint_t *nodo = h;
+	const dlistint_t *nodo = h;
 	size_t i = 0;
 
-	while (n != NULL)
+	while (nodo != NULL)
 	{
 		i++;
 		nodo = nodo->next;
