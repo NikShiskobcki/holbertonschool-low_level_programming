@@ -10,7 +10,7 @@ size_t print_dlistint(const dlistint_t *h)
 	size_t i = 0;
 
 	while (nodo != NULL)
-	{ 
+	{
 		printf("%i\n", nodo->n);
 		i++;
 		nodo = nodo->next;
