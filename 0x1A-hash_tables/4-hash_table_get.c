@@ -1,4 +1,5 @@
 #include "hash_tables.h"
+#include <string.h>
 /**
  * hash_table_get - gets value from hash table
  *@ht: hash table
